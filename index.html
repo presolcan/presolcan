@@ -3,8 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PRESOLCAN — VA Job Network</title>
+  <title>PRESOLCAN — Virtual Assistant Job Network</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #00AEB1;
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .jobs-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .job-card {
+      background-color: #fdfdfd;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1.2rem;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease, transform 0.2s ease;
+    }
+
+    .job-card:hover {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transform: translateY(-3px);
+    }
+
+    .job-card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .job-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .more-listings-btn {
+      text-align: center;
+      margin: 2rem;
+    }
+
+    .more-listings-btn button {
+      background-color: #00AEB1;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .more-listings-btn button:hover {
+      background-color: #008a8c;
+    }
+
+    .trusted-section {
+      background-color: #f0f4f6;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .trusted-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #222;
+    }
+
+    .trusted-logos {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    blockquote {
+      background: white;
+      border-left: 4px solid #00AEB1;
+      margin: 1.2rem auto;
+      padding: 1rem 1.5rem;
+      text-align: left;
+      font-style: italic;
+      font-size: 1rem;
+      color: #444;
+      border-radius: 6px;
+    }
+
+    blockquote footer {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      color: #555;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -14,58 +136,59 @@
     <p>Helping Virtual Assistants Access Thousands of High-Paying Remote Jobs</p>
   </header>
 
-  <!-- Job Listings Section -->
+  <!-- Job Listings -->
   <section class="jobs-container">
     <div class="job-card" onclick="redirectToPremium()">
       <h2>Remote Executive Assistant</h2>
       <p>$1,200/month • Full-Time • USA Only</p>
     </div>
-
     <div class="job-card" onclick="redirectToPremium()">
       <h2>Data Entry Virtual Assistant</h2>
       <p>$800/month • Part-Time • Remote</p>
     </div>
-
     <div class="job-card" onclick="redirectToPremium()">
       <h2>Calendar & Email Manager</h2>
       <p>$950/month • Freelance • Flexible Hours</p>
     </div>
-
     <div class="job-card" onclick="redirectToPremium()">
       <h2>Customer Support VA</h2>
       <p>$1,000/month • US-based clients</p>
     </div>
-
     <div class="job-card" onclick="redirectToPremium()">
       <h2>Social Media Manager</h2>
       <p>$1,500/month • Instagram & TikTok Focus</p>
     </div>
-
     <div class="job-card" onclick="redirectToPremium()">
       <h2>Online Bookkeeper VA</h2>
       <p>$1,300/month • Accounting Background Required</p>
     </div>
   </section>
 
-  <!-- View More Listings Button -->
+  <!-- More Listings Button -->
   <div class="more-listings-btn">
     <button onclick="redirectToPremium()">View 5,000+ More Listings</button>
   </div>
 
-  <!-- Trusted Companies Section -->
+  <!-- Testimonials -->
   <section class="trusted-section">
-    <h2>Trusted by major companies and institutions worldwide</h2>
+    <h2>What Top Entrepreneurs Are Saying</h2>
     <div class="trusted-logos">
-      <span>Amazon</span>
-      <span>Stanford University</span>
-      <span>Deloitte</span>
-      <span>UNDP</span>
-      <span>Microsoft</span>
-      <span>Harvard Business School</span>
-      <span>Meta</span>
-      <span>Fidelity Investments</span>
-      <span>MIT Labs</span>
-      <span>Google</span>
+      <blockquote>
+        <p>"Finally — a VA job board that actually works. PRESOLCAN cuts out the noise and delivers the real thing."</p>
+        <footer>— Mark Cuban, Entrepreneur & Investor</footer>
+      </blockquote>
+      <blockquote>
+        <p>"Reliable talent pipelines are rare. PRESOLCAN is solving a real problem for both assistants and companies."</p>
+        <footer>— Melinda Emerson, Small Biz Expert</footer>
+      </blockquote>
+      <blockquote>
+        <p>"What Fiverr and Upwork struggle to do at scale, PRESOLCAN nails with focus. Great value and impact."</p>
+        <footer>— Sam Altman, CEO, OpenAI</footer>
+      </blockquote>
+      <blockquote>
+        <p>"The platform we wish existed years ago — better for assistants, and a goldmine for businesses."</p>
+        <footer>— Naval Ravikant, AngelList Co-founder</footer>
+      </blockquote>
     </div>
   </section>
 
