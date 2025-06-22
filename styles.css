@@ -1,0 +1,123 @@
+/* Base reset and body styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #00AEB1;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Job Listings Section */
+.jobs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.job-card {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.job-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.job-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* View More Listings Button */
+.more-listings-btn {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.more-listings-btn button {
+  background-color: #00AEB1;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.more-listings-btn button:hover {
+  background-color: #008a8c;
+}
+
+/* Trusted by section */
+.trusted-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #e9f9f9;
+}
+
+.trusted-section h2 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+.trusted-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.trusted-logos span {
+  background-color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #444;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  color: #555;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
